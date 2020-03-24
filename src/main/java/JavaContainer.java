@@ -31,7 +31,7 @@ public class JavaContainer {
         clist.add("y"); // 运行时此行报错
         System.out.println(list.size());*/
 
-        ArrayList nums = new ArrayList();
+       /* ArrayList nums = new ArrayList();
         nums.add(8);
         nums.add(-3);
         nums.add(2);
@@ -61,6 +61,46 @@ public class JavaContainer {
         System.out.println("指定排序后顺序：" + nums);
         System.out.println("最大的值是：" + Collections.max(nums));
         System.out.println("最小的值是：" + Collections.min(nums));
+        hashMapTest();*/
+
 
     }
+    private static void arrayListTest(){
+
+    }
+
+    static class Ctime {
+        int count = 1;
+
+        public String toString() {
+            return Integer.toString(count);
+        }
+    }
+    private static void hashMapTest() {
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("d", "ddd");
+        map.put("b", "bbb");
+        map.put("a", "aaa");
+        map.put("c", "ccc");
+        Iterator<String> iter = map.keySet().iterator();
+        while (iter.hasNext()) {
+            String key = iter.next();
+            System.out.println(key);
+            System.out.println(map.get(key));
+        }
+
+        HashMap h1 = new HashMap();
+        Random r1 = new Random();
+        for (int i = 0; i < 1000; i++) {
+            Integer t = new Integer(r1.nextInt(20));
+            if (h1.containsKey(t))
+                ((Ctime) h1.get(t)).count++;
+            else
+                h1.put(t, new Ctime());
+        }
+        System.out.println(h1);
+        System.out.println(h1.keySet());
+    }
 }
+
+
