@@ -1,3 +1,5 @@
+package javaBase;
+
 /**
  * “Go Further进无止境” <br>
  * 〈java基础知识点1〉
