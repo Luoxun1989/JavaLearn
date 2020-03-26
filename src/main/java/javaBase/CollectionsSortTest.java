@@ -37,10 +37,10 @@ public class CollectionsSortTest {
         Collections.sort(list, new Comparator<Student>() {
             @Override
             public int compare(Student o1, Student o2) {
-                return o1.getName().compareTo(o2.getName());    // 比较学生姓名
+                return o1.getAge()-o2.getAge();    // 比较学生姓名
             }
         });
-
+//        Collections.synchronizedList(list);
         for(Student stu : list) {
             System.out.println(stu);
         }
