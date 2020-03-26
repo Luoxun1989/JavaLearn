@@ -9,10 +9,7 @@ package javaBase; /**
  * 作者姓名           修改时间           版本号              描述
  */
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 /**
  * 〈一句话功能简述〉<br> 
@@ -23,7 +20,20 @@ import java.util.List;
  * @since 1.0.0
  */
 public class CollectionsSortTest {
-    public static void main(String[] args) {
+    public static void practice(){
+        List list = Arrays.asList("one two three four five six siven".split(" "));
+//        Collections.sort(list);
+//        Collections.reverse(list);
+//        Collections.shuffle(list);
+        List n = Arrays.asList("我 是 复制过来的哈".split(" "));
+//        Collections.copy(list,n);
+//        Collections.fill(list,"yy");
+//        System.out.println( Collections.max(list));
+        Collections.rotate(list,3);
+        System.out.println(list);
+
+    }
+    public static void practice2(){
         List<Student> list = new ArrayList<Student>();     // Java 7的钻石语法(构造器后面的尖括号中不需要写类型)
         list.add(new Student("Hao LUO", 33));
         list.add(new Student("XJ WANG", 32));
@@ -49,5 +59,8 @@ public class CollectionsSortTest {
 //      javaBase.Student [name=Bruce LEE, age=60]
 //      javaBase.Student [name=Hao LUO, age=33]
 //      javaBase.Student [name=XJ WANG, age=32]
+    }
+    public static void main(String[] args) {
+        practice();
     }
 }

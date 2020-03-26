@@ -3,7 +3,7 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
       <module name="javalearn" target="1.5" />
-      <module name="JavaLearn" target="1.5" />
+      <module name="JavaLearn" target="6" />
     </bytecodeTargetLevel>
   </component>
 </project>
