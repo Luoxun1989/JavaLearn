@@ -18,5 +18,12 @@ package javaBase; /**
  * @since 1.0.0
  */
 public class JavaFinalKWTest {
+    private final static int num = 5;
 
+
+}
+class JavaFinalKWTest2 extends JavaFinalKWTest {
+    public static void main(String[] args) {
+
+    }
 }
