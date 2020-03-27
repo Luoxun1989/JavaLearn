@@ -1,6 +1,6 @@
 package javaBase; /**
  * Copyright (C), 2015-2020, XXX有限公司
- * FileName: javaBase.CollectionsSortTest
+ * FileName: javaBase.CollectionsToolTest
  * Author:   admin
  * Date:     2020/3/25 21:16
  * Description: Collections工具类中的sort()方法如何比较元素
@@ -19,7 +19,7 @@ import java.util.*;
  * @create 2020/3/25
  * @since 1.0.0
  */
-public class CollectionsSortTest {
+public class CollectionsToolTest {
     public static void practice(){
         List list = Arrays.asList("one two three four five six siven".split(" "));
 //        Collections.sort(list);

@@ -22,8 +22,6 @@ public class JavaFinalKWTest {
 
 
 }
-class JavaFinalKWTest2 extends JavaFinalKWTest {
-    public static void main(String[] args) {
 
-    }
-}
+
+

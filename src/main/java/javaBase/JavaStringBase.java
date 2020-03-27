@@ -8,9 +8,9 @@ package javaBase;
  * @create 2020/3/24
  * @since 1.0.0
  */
-public class JavaBaseKnowlegde {
+public class JavaStringBase {
     public static void main(String[] args) {
-
+        practice3();
     }
     public static void  practice1(){
         String x = "string";
@@ -30,12 +30,17 @@ public class JavaBaseKnowlegde {
         System.out.println(b == c);
     }
     public static void  practice3(){
+
         Integer f1 = 100, f2 = 100, f3 = 150, f4 = 150;
+        Integer f6 = -129, f7 = -129, f8 = 127, f9 = 127;
         System.out.println(f1 == f2);
+        //false Integer常量池大小 -128-127，超过了分配到堆内存
         System.out.println(f3 == f4);
+        System.out.println(f6 == f7);
+        System.out.println(f8 == f9);
     }
     public static void  practice4(){
-        short s1 = 1; s1 += 1;
-//        short s1 = 1; s1 = s1 + 1; // 有错
+        short s1 = 1; s1 += 1; // 正确 隐含了强制转换
+//        short s1 = 1; s1 = s1 + 1; // 有错 1是int，需要强制转换
     }
 }
