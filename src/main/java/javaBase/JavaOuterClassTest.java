@@ -39,7 +39,17 @@ public class JavaOuterClassTest {
         new AnonymousInnerClassInterface(){
             @Override
             public void show() {
-                System.out.printf("AnonymousInnerClassInterface");
+                System.out.printf("AnonymousInnerClassInterface.show");
+            }
+
+            @Override
+            public void run() {
+                System.out.printf("AnonymousInnerClassInterface.run");
+            }
+
+            @Override
+            public void walk() {
+                System.out.printf("AnonymousInnerClassInterface.run");
             }
         }.show();
     }
